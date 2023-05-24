@@ -1,0 +1,68 @@
+
+/*Основной блок*/
+.main_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 2px dashed green;
+    margin: 0;
+    padding: 0;
+}
+/*Основной блок*/
+
+/*Голова сайта*/
+header{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/clovertec_bannerimag.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    margin: 0;
+}
+
+.main_block__images{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.main_block__images > img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*header=header*/
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+}
+
+.main-header__block{
+    width: 20%;
+}
+
+.main-header__block > h2{
+    font-size: 40px;
+    margin-top: -50%;
+}
+
+.main-header__block > button{
+    margin-top: -50%;
+}
+
+/*header=header*/
+
+
+/*Голова сайта*/
