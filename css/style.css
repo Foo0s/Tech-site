@@ -1,14 +1,17 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 /*Основной блок*/
 .main_block{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
-    border: 2px dashed green;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 /*Основной блок*/
 
@@ -16,53 +19,192 @@
 header{
     width: 100%;
     height: 800px;
+    background: url("../images/clovertec_bannerimag.png") no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../images/clovertec_bannerimag.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-    margin: 0;
+    flex-wrap: wrap;
+    margin: auto;
+    background-size:  100% 784px;
 }
 
-.main_block__images{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid black;
-}
-
-.main_block__images > img{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
 
 /*header=header*/
 .main-header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-    position: absolute;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+    width: 90%;
+    margin-top: -1%;
 }
 
 .main-header__block{
     width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.main-header__block > h2{
+.main-header__block .main-header__block_h2 h2{
     font-size: 40px;
-    margin-top: -50%;
 }
 
 .main-header__block > button{
-    margin-top: -50%;
+    width: 290px;
+    height:90px;
+    border-radius: 20px;
+    background-color: #FCC503;
+    color: white;
+    font-size: 22px;
+    border: #f4c311;
+    margin-right: -190px;
+}
+
+.main-header__block > button:hover{
+    border-radius: 14px;
+    background-color: #EF7300;
+    color: white;
+}
+
+.main-header__block > h2{
+    margin-top: -130px;
+}
+
+.main-header__center{
+    width: 35%;
+    height: 120px;
+    text-align: center;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: -240px;
+    margin-left: 180px;
+    text-align: center;
+    width: 60%;
+}
+
+.main-header__center{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.main-center_text{
+    width: 120%;
+}
+
+.main-center_text > p{
+    font-size: 62px;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 0.2px black;
+}
+
+
+.main-center_button{
+    width: 70%;
+}
+
+.main-center_button button{
+    width: 70%;
+    height: 80px;
+    border-radius: 40px;
+    background-color: EF7300;
+    border: #FCC503;
+    color: white;
+    font-size:large;
+}
+
+.main-center_button:hover button{
+    background-color: #FCC503;
+}
+
+.main-text-left{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.main-text-left__left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.left-text{
+    font-size: 50px;
+    width: 100%;
+    color:#FCC503;
+    -webkit-text-stroke: 0.2px black;
+    font-weight: bold;
+}
+
+.left-text-number{
+    margin-top: -10%;
+}
+
+.left-text-number > a{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.left-text-number:hover > a{
+    color: rgb(74, 70, 70);
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.left-text-image{
+    margin-top: 10%;
+}
+
+.left-text_dop{
+    margin-top: 10%;
+    color: #FCC503;
+    font-size: 50;
+    -webkit-text-stroke: 0.3px black;
+}
+
+.left-text-line{
+    margin-top: -10%;
 }
 
 /*header=header*/
 
 
 /*Голова сайта*/
+
+/*Центр сайта*/
+
+.main_block__center{
+    width: 100%;
+    height: 50%;
+}
+
+.main_block_thirst{
+    background: url("../images/1614507669_190-p-kirpich-belii-fon-249.jpg") no-repeat;
+    width: 100%;
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.object_answer{
+    width: 30%;
+    margin: auto;
+}
