@@ -489,3 +489,118 @@ header{
     flex-direction: row;
     margin-top: 30px;
 }
+
+.six_block__button{
+    margin: auto;
+    margin-top: 40px;
+    width: 60%;
+    text-align: center;
+}
+
+.six_block__button > button{
+    width: 20%;
+    height: 80px;
+    background-color: black;
+    border-radius: 200px;
+    color: white;
+    font-size: 40px;
+}
+
+.footer_first{
+    margin-top: 90px;
+    background-color: #f9c77b;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer_first__left{
+    width:25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+.footer_first__center{
+    width: 50%;
+    height: auto;
+    height: 100%;
+}
+
+.footer_first__right{
+    width: 25%;
+    height: 100%;
+}
+
+.footer_first_center_information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+.footer_first_logo{
+    font-size: 60px;
+    margin: auto;
+    display: flex;
+    margin-top: 0%;
+    margin-left: 30%;
+    font-weight: bold;
+}
+
+.footer_first_line{
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+.first_inform__header{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer_first_text{
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.first_inform__header{
+    margin-top: 2%;
+    font-size: 44px;
+    color:white;
+}
+
+.first_inform__text{
+    font-size: 30px;
+    margin-top: -2%;
+    color: #FCC503;
+    -webkit-text-stroke: 0.2px black;
+}
+
+.first_inform__time{
+    margin-top: -70px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer_first_button{
+    width: 40%;
+    margin: auto;
+}
+
+.footer_first_button > button{
+    width: 140%;
+    height: 90px;
+    margin-top: 60px;
+    border: #FCC503;
+    background-color: #FCC503;
+    color: black;
+    border-radius: 24px;
+    font-size: 30px;
+}
