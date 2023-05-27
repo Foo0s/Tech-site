@@ -3,7 +3,6 @@ body{
     margin: 0;
     padding: 0;
     background-color: wheat;
-    height: 100%;
 }
 
 /*Основной блок*/
@@ -13,7 +12,6 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 /*Основной блок*/
 
@@ -646,4 +644,71 @@ header{
     color: black;
     border-radius: 24px;
     font-size: 30px;
+}
+
+.footer_second{
+    background-color: #BDAF9A;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.footer_second_line{
+    margin: auto;
+}
+
+.footer_second_logo{
+    font-size: 64px;
+    font-weight: bold;
+    height: 170px;
+}
+
+.footer_second__left{
+    width:25%;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    font-size: 40px;
+    align-items: center;
+}
+
+.footer_second__center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+}
+
+.footer_second__right{
+    width: 25%;
+    height: 100%;
+}
+
+.footer_second__right__icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_second__right__icons > img{
+    width: 19%;
+}
+
+.footer_second_text{
+    font-size: 40px;
+}
+
+.footer_second_right__text{
+    margin-top: 2%;
+    font-size: 46px;
+    color: #FCC503;
+    font-weight: bold;
+    -webkit-text-stroke: 0.4px black;
 }
