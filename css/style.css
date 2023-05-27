@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: wheat;
+    height: 100%;
 }
 
 /*Основной блок*/
@@ -18,16 +19,16 @@ body{
 
 /*Голова сайта*/
 header{
-    margin: 0;
-    padding: 0;
     width: 100%;
-    height: 800px;
+    height: 100%;
     background: url("../images/clovertec_bannerimag.png") no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-size:  100% 784px;
+    background-size:  100% 100%;
+    border: 2px solid saddlebrown;
+    padding-bottom: 4%;
 }
 
 
@@ -56,12 +57,12 @@ header{
 }
 
 .main-header__block > button{
-    width: 290px;
+    width: 70%;
     height:90px;
     border-radius: 20px;
     background-color: #FCC503;
     color: white;
-    font-size: 22px;
+    font-size: 32px;
     border: #f4c311;
     margin-right: -190px;
 }
@@ -78,17 +79,17 @@ header{
 
 .main-header__center{
     width: 35%;
-    height: 120px;
+    height: 2%;
     text-align: center;
 }
 
 .main-text{
     display: flex;
     flex-direction: column;
-    margin-top: -240px;
-    margin-left: 180px;
+    margin-left: 10%;
+    margin-top: 4%;
     text-align: center;
-    width: 60%;
+    width: 70%;
 }
 
 .main-header__center{
@@ -118,13 +119,14 @@ header{
 }
 
 .main-center_button button{
-    width: 70%;
-    height: 80px;
+    width: 100%;
+    height: 90px;
     border-radius: 40px;
     background-color: EF7300;
     border: #FCC503;
     color: white;
     font-size:large;
+    font-size: 30px;
 }
 
 .main-center_button:hover button{
@@ -134,7 +136,8 @@ header{
 .main-text-left{
     display: flex;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: -15%;
+    margin-top: 10%;
 }
 
 .main-text-left__left{
@@ -257,8 +260,8 @@ header{
 .object_button > button{
     width: 40%;
     height: 140px;
-    border: 2px solid black;
     background: none;
+    border: 1px solid white;
     border-radius: 20px;
     font-size: 40px;
     font-weight: bold;
@@ -270,6 +273,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 60px;
 }
 
 .recomend_text{
@@ -300,23 +304,54 @@ header{
     padding-top: 30px;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
     height: 650px;
+    align-self: center;
+    align-content: center;
+    flex-wrap: wrap;
+    min-height: 650px;
+    max-height: auto;
+    padding: 90px 10px 90px 10px;
 }
 
 .recomend_block__image{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    width: 100%;
+    margin: auto;
+    height: 20%;
 }
+
+.recomend_block__image_two{
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
 
 .recomend_block__head{
     text-align: center;
     font-size: 40px;
+    width: 100%;
 }
 
 .recomend_block__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color:#FCC503;
     font-size: 40px;
-    -webkit-text-stroke: 0.1px black
+    -webkit-text-stroke: 0.1px black;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 4%;
 }
 
 .main_block_three{
@@ -462,7 +497,7 @@ header{
 .six_block{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -476,8 +511,16 @@ header{
 .six_block__img{
     width: 45%;
     display: flex;
-    flex: auto;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.img_block__six{
+    width: 30%;
+}
+
+.img_block__six > img{
+    width: 100%;
 }
 
 .six_block__images{
