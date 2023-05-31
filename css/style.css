@@ -1,8 +1,18 @@
+@font-face {
+    font-family: "Maler";
+    src: url("../fonts/Maler_Header_font/Maler.ttf");
+}
+
+@font-face{
+    font-family: "Abebas";
+    src: url("../fonts/Garet/Garet-Heavy.ttf");
+}
+
 body{
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: wheat;
+    background-color: #F7B06F;
 }
 
 /*Основной блок*/
@@ -27,6 +37,44 @@ header{
     background-size:  100% 100%;
     border: 2px solid saddlebrown;
     padding-bottom: 4%;
+    filter: drop-shadow(0 0 40px black);
+}
+.text_style{
+    font-family: "Maler";
+    text-decoration: none;
+    color: white;
+}
+
+.text_footer{
+    font-family: "Maler";
+    color:#EF7300;
+    text-decoration: none;
+}
+
+.text_style_main{
+    font-family: "Abebas";
+    color: white;
+    text-decoration: none;
+}
+
+.text_style_main_two{
+    font-family: "Abebas";
+    color: #FDAD1C;
+    text-decoration: none;
+}
+
+.text_style_main_three{
+    font-family: "Abebas";
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text_style_main_four{
+    font-family: "Abebas";
+    color:rgb(74, 70, 70);
+    font-size: 28px;
+    text-decoration: none;
 }
 
 
@@ -45,20 +93,35 @@ header{
     width: 20%;
     height: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.main-header__block .main-header__block_h2 h2{
-    font-size: 40px;
+.main-header__block .main-header__block_h2 > h2{
+    font-size: 50px;
+}
+
+.main-header__block_h2{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.main-header__block_img > img{
+    width: 60%;
+    margin: auto;
+}
+
+.main-header__block_img{
+    text-align: center;
+    margin: auto;
 }
 
 .main-header__block > button{
     width: 70%;
     height:90px;
     border-radius: 20px;
-    background-color: #FCC503;
+    background-color: #FF4F00;
     color: white;
     font-size: 32px;
     border: #f4c311;
@@ -102,13 +165,13 @@ header{
 
 .main-center_text{
     width: 120%;
+    background: rgba(0, 0, 0, 0.248);
+    border-radius: 12px;
 }
 
 .main-center_text > p{
     font-size: 62px;
-    color: white;
     font-weight: bold;
-    -webkit-text-stroke: 0.2px black;
 }
 
 
@@ -120,8 +183,8 @@ header{
     width: 100%;
     height: 90px;
     border-radius: 40px;
-    background-color: EF7300;
-    border: #FCC503;
+    background-color: #EF7300;
+    border: #FF4F00;
     color: white;
     font-size:large;
     font-size: 30px;
@@ -177,7 +240,6 @@ header{
 
 .left-text_dop{
     margin-top: 10%;
-    color: #FCC503;
     font-size: 50;
     -webkit-text-stroke: 0.3px black;
 }
@@ -272,6 +334,7 @@ header{
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 60px;
+    filter: drop-shadow(0 0 40px black);
 }
 
 .recomend_text{
@@ -355,12 +418,13 @@ header{
 .main_block_three{
     background-color: #D9D9D9;
     width: 100%;
-    height: 1000px;
+    height: 1200px;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    filter: drop-shadow(0 0 10px black);
 }
 
 .three_block__header{
@@ -380,7 +444,7 @@ header{
     background-color: #FFFFFF;
     border-radius: 20px;
     width: 40%;
-    height: 380px;
+    height: 420px;
 }
 
 .block_otziv__header{
@@ -424,6 +488,7 @@ header{
     background-color: #FCC503;
     font-size: 40px;
     font-weight: bold;
+    font-family: "Maler";
 }
 
 .main_block__five{
@@ -455,7 +520,7 @@ header{
 }
 
 .block_five__main{
-    width: 40%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -468,7 +533,6 @@ header{
 .block_five__text{
     background-color: #D9D9D9;
     border-radius: 100px;
-    width: 40%;
     height: 120px;
     margin-top: 30px;
     margin-right: 30px;
@@ -477,19 +541,27 @@ header{
     text-align: center;
     justify-content: center;
     align-items: center;
+    width: 40%;
 }
 
 .five_element{
     font-size: 50px;
     font-weight: bold;
     margin-left: 30px;
-    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+ }
+
+.five_element > p{
+    font-family: "Abebas";
+    font-size: 46px;
 }
 
 .main_block__six{
     background-color: #F5F3E2;
     width: 100%;
     padding-bottom: 40px;
+    filter: drop-shadow(0 0 40px black);
 }
 
 .six_block{
@@ -551,7 +623,7 @@ header{
     margin-top: 90px;
     background-color: #f9c77b;
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -648,7 +720,7 @@ header{
 
 .footer_second{
     background-color: #BDAF9A;
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -698,7 +770,7 @@ header{
 }
 
 .footer_second__right__icons > img{
-    width: 19%;
+    width: 15%;
 }
 
 .footer_second_text{

@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Header;
+    src: url("../fonts/Aqum_2/Aqum\ 2\ Classic.otf");
+}
+
+@font-face {
+    font-family: Maler;
+    src: url("../fonts/Maler_Header_font/Maler.ttf");
+}
+
+body{
+    background: url("../images/gnm-cervis-9773016939-1.jpg") no-repeat;
+    background-size: 100%;
+}
+
+hr{
+    width: 88%;
+    height: 8px;
+    color: #FEC04D;
+    font-family: "Header";
+}
+
+.button_back{
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.button_back > button{
+    width: 20%;
+    height: 100px;
+    background-color: #E29303;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 0px 13px black;
+}
+
+.button_back > button > a{
+    font-family: "Maler";
+    font-size: 40px;
+    text-decoration: none;
+    color: black
+}
+
+.center_help_block{
+    width: 70%;
+    margin: auto;
+    background-color: #595959;
+    border-radius: 20px;
+    margin-top: 6%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    box-shadow: 0px 0px 20px black;
+    font-family: "Header";
+    height: 1800px;
+}
+
+
+.header__h{
+    font-size: 50px;
+    color: #E29303;
+    text-align: center;
+    background-color: #424141;
+    font-family: "Header";
+}
+
+.text{
+    color: #E29303;
+    font-size: 42px;
+}
+
+.block__asked{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto;
+    grid-row-gap: 15px;
+}
+
+.block__asked > input{
+    height: 60px;
+    width: auto;
+}
+
+.block__asked > select{
+    height: 60px;
+}
+
+.block__asked > label{
+    font-size: 42px;
+}
+
+.help_block__main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.help_block__main > h3{
+    margin-left: 6%;
+    font-size: 52px;
+    color: white;
+    margin-right: 6%;
+    text-align: center;
+}
+
+.block__asked > h2{
+    font-size: 46px;
+    color:#FDAD1C
+}
+
+footer{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+.footer__button{
+    width: 40%;
+    text-align: center;
+}
+
+.footer__button > .button{
+    width: 80%;
+    height: 80px;
+    border-radius: 70px;
+    background-color: #E29303;
+    border: none;
+}
+
+.button{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 42px;
+    font-family: "Maler";
+}
+
+.footer__h{
+    font-size: 52px;
+    color: white;
+    font-family: "Header";
+}
