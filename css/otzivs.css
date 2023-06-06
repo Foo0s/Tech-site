@@ -1,3 +1,15 @@
+/*Подключение шрифтов*/
+
+@font-face {
+    font-family: "Maler";
+    src: url("../fonts/Maler_Header_font/Maler.ttf");
+}
+
+@font-face{
+    font-family: "Abebas";
+    src: url("../fonts/Garet/Garet-Heavy.ttf");
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -36,6 +48,7 @@ body{
     display: grid;
     text-align: center;
     align-content: center;
+    font-family: 'Maler';
 }
 
 .header_h2 > h2{
@@ -45,7 +58,7 @@ body{
 
 /*Внутренний контент*/
 .main_otziv_block__content{
-    background-color: #FAE1E1;
+    background-color: #c6bfbf;
     width: 35%;
     margin: auto;
     border-radius: 30px;
@@ -67,6 +80,7 @@ body{
     margin: auto;
     font-size: 90%;
     margin-top: 4%;
+    font-family: "Abebas";
 }
 
 .content_surname{
@@ -79,6 +93,7 @@ body{
     justify-content: center;
     margin: auto;
     font-size: 90%;
+    font-family: "Abebas";
     margin-top: 4%;
 }
 
@@ -106,6 +121,7 @@ body{
     justify-content: center;
     border-radius: 40px;
     margin-top: 4%;
+    font-family: "Abebas";
 }
 
 .content_textarea{
@@ -145,6 +161,7 @@ body{
     justify-content: center;
     border-radius: 40px;
     margin-top: 4%;
+    font-family: "Abebas";
 }
 
 .con-footer__h > img{
@@ -165,6 +182,7 @@ body{
     height: 60px;
     margin: auto;
     font-size: 30px;
+    font-family: 'Maler';
 }
 
 .con-footer__range{
@@ -180,4 +198,40 @@ body{
 
 .con-footer__range > input{
     width: 70%;
+}
+
+/*Кнопка обратно.*/
+.otziv_block_back{
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.otziv_block_back > button{
+    width: 60%;
+    height: 90px;
+    background-color: #EF7300;
+    border-radius: 20px;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.otziv_block_back > button > a{
+    text-decoration: none;
+    color: black;
+    font-size: 27px;
+    font-family: "Maler";
+}
+
+.otziv_block_back > button > img{
+    width: 38%;
+    margin: auto;
+    height: 20px;
+}
+
+.otziv_block_back > button:hover{
+    background-color: rgb(167, 80, 0);
 }
