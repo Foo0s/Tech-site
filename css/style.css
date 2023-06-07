@@ -15,6 +15,10 @@ body{
     background-color: #F7B06F;
 }
 
+ul{
+    list-style-type: none;
+}
+
 /*Основной блок*/
 .main_block{
     display: flex;
@@ -28,14 +32,13 @@ body{
 /*Голова сайта*/
 header{
     width: 100%;
-    height: 100%;
+    height: auto;
     background: url("../images/clovertec_bannerimag.png") no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background-size:  100% 100%;
-    border: 2px solid saddlebrown;
     padding-bottom: 4%;
     filter: drop-shadow(0 0 40px black);
 }
@@ -68,6 +71,7 @@ header{
     color: black;
     font-weight: bold;
     text-decoration: none;
+    font-size: 32px;
 }
 
 .text_style_main_four{
@@ -90,15 +94,19 @@ header{
 }
 
 .main-header__block{
-    width: 20%;
-    height: 100px;
+    width: 17%;
+    height: 60px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.main-header__block .main-header__block_h2 > h2{
-    font-size: 50px;
+.main-header__block > button > a{
+    font-size: 26px;
+}
+
+.main-header__block{
+    font-size: 20px;
 }
 
 .main-header__block_h2{
@@ -148,19 +156,19 @@ header{
     display: flex;
     flex-direction: column;
     margin-left: 10%;
-    margin-top: 4%;
     text-align: center;
     width: 70%;
+    height: auto;
 }
 
 .main-header__center{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 30%;
+    width: 35%;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .main-center_text{
@@ -170,12 +178,13 @@ header{
 }
 
 .main-center_text > p{
-    font-size: 62px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 
 .main-center_button{
+    margin-top: 20px;
     width: 70%;
 }
 
@@ -198,7 +207,7 @@ header{
     display: flex;
     justify-content: center;
     margin-left: -15%;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 .main-text-left__left{
@@ -209,7 +218,7 @@ header{
 }
 
 .left-text{
-    font-size: 50px;
+    font-size: 34px;
     width: 100%;
     color:#FCC503;
     -webkit-text-stroke: 0.2px black;
@@ -240,7 +249,7 @@ header{
 
 .left-text_dop{
     margin-top: 10%;
-    font-size: 50;
+    font-size: 42px;
     -webkit-text-stroke: 0.3px black;
 }
 
@@ -275,7 +284,7 @@ header{
 }
 
 .block__element{
-    width: 60%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -294,19 +303,19 @@ header{
     align-items: center;
     margin-top: 30px;
     flex-wrap: wrap;
-    height: 40%;
+    height: auto;
 }
 
 
 .object_answer__text{
     margin-right: 60px;
-    font-size: 60px;
+    font-size: 40px;
     color: black;
     font-weight: bold;
 }
 
 .object_button{
-    width: 100%;
+    width: 80%;
     height: 40%;
     text-align: center;
     margin: auto;
@@ -323,7 +332,7 @@ header{
     background: none;
     border: 1px solid white;
     border-radius: 20px;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
 }
 
@@ -338,7 +347,6 @@ header{
 }
 
 .recomend_text{
-    font-size: 64px;
     color: #FCC503;
     text-align: center;
     margin-top: 10px;
@@ -408,7 +416,7 @@ header{
     align-items: center;
     text-align: center;
     color:#FCC503;
-    font-size: 40px;
+    font-size: 27px;
     -webkit-text-stroke: 0.1px black;
     width: 100%;
     height: 30%;
@@ -418,18 +426,18 @@ header{
 .main_block_three{
     background-color: #D9D9D9;
     width: 100%;
-    height: 1200px;
+    height: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-self: center;
     filter: drop-shadow(0 0 10px black);
+    padding-bottom: 20px;
 }
 
 .three_block__header{
-    font-size: 80px;
-    text-align: center;
+    text-align: center;    
 }
 
 .three_block__content{
@@ -489,7 +497,14 @@ header{
     font-size: 40px;
     font-weight: bold;
     font-family: "Maler";
+    border: none;
 }
+
+.three_block__button > button:hover{
+    background-color: #EF7300;
+    color: white
+}
+
 
 .main_block__five{
     background-color: #9D9D9D;
@@ -498,7 +513,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 10px 10px 40px 10px;
+    padding: 10px 10px 80px 10px;
 }
 
 .block_five__header{
@@ -515,7 +530,6 @@ header{
     margin: auto;
     font-size: 32px;
     color: white;
-    margin-top: -10%;
     width: 100%;
 }
 
@@ -549,12 +563,18 @@ header{
     font-weight: bold;
     margin-left: 30px;
     display: flex;
-    justify-content: flex-end;
  }
 
-.five_element > p{
+.five_element{
     font-family: "Abebas";
-    font-size: 46px;
+    font-size: 36px;
+}
+
+.five_element > ul > li > a{
+    text-decoration: none;
+    font-family: "Abebas";
+    font-size: 36px;
+    color: black;
 }
 
 .main_block__six{
@@ -660,8 +680,7 @@ header{
 }
 
 .footer_first_logo{
-    font-size: 60px;
-    margin: auto;
+    font-size: 40px;
     display: flex;
     margin-top: 0%;
     margin-left: 30%;
@@ -734,9 +753,8 @@ header{
 }
 
 .footer_second_logo{
-    font-size: 64px;
+    font-size: 44px;
     font-weight: bold;
-    height: 170px;
 }
 
 .footer_second__left{
@@ -747,6 +765,7 @@ header{
     height: 60%;
     font-size: 40px;
     align-items: center;
+    margin-left: 2%;
 }
 
 .footer_second__center{
