@@ -109,6 +109,10 @@ body{
     background-color: #3F3838;
     opacity: 0.8;
     height: 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 110%;
+    font-family: "Abebas";
 }
 
 .content_comm{
@@ -137,6 +141,10 @@ body{
     border-radius: 20px;
     height: 90px;
     resize: vertical;
+    color: white;
+    font-weight: bold;
+    font-size: 110%;
+    font-family: 'Abebas';
 }
 
 /*Footer - подвал контента*/
@@ -190,10 +198,45 @@ body{
     background-color: #2E2727;
     border-radius: 14px;
     margin: auto;
-    height: 40px;
+    height: auto;
     align-items: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 7px;
+}
+
+.con-footer__range > datalist{
+    display: grid;
+    writing-mode: vertical-lr;
+    width: 70%;
+    grid-template-columns: 1fr;
+    grid-gap: 15%;
+}
+
+.con-footer__range > datalist > option{
+    height: auto;
+    width: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.block_star{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1px;
+    flex-wrap: wrap;
+}
+
+.block_star > p{
+    font-size: 16px;
+    margin-top: 5px;
+    transform: rotate(270deg);
+    color: white;
 }
 
 .con-footer__range > input{
