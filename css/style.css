@@ -136,12 +136,6 @@ header{
     margin-right: -190px;
 }
 
-.main-header__block > button:hover{
-    border-radius: 14px;
-    background-color: #EF7300;
-    color: white;
-}
-
 .main-header__block > h2{
     margin-top: -130px;
 }
@@ -175,6 +169,7 @@ header{
     width: 120%;
     background: rgba(0, 0, 0, 0.248);
     border-radius: 12px;
+    padding: 20px;
 }
 
 .main-center_text > p{
@@ -184,24 +179,11 @@ header{
 
 
 .main-center_button{
-    margin-top: 20px;
-    width: 70%;
+    margin-top: 25px;
+    max-width: 87%;
+    width: 60%;
 }
 
-.main-center_button button{
-    width: 100%;
-    height: 90px;
-    border-radius: 40px;
-    background-color: #EF7300;
-    border: #FF4F00;
-    color: white;
-    font-size:large;
-    font-size: 30px;
-}
-
-.main-center_button:hover button{
-    background-color: #FCC503;
-}
 
 .main-text-left{
     display: flex;
@@ -293,25 +275,34 @@ header{
     justify-content: space-between;
 }
 
+.object_answer__image{
+    margin: auto;
+}
+
 .object_answer{
     margin-top: 40px;
     width: 40%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
     flex-wrap: wrap;
-    height: auto;
+    height: 500px;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
 }
 
-
 .object_answer__text{
-    margin-right: 60px;
-    font-size: 40px;
+    max-height: 120px;
+    text-align: center;
+    margin: auto;
+}
+
+.object_answer__text > p{
+    font-size: 42px;
     color: black;
     font-weight: bold;
+    text-align: center;
 }
 
 .object_button{
@@ -455,24 +446,50 @@ header{
     height: 420px;
 }
 
-.block_otziv__header{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+.block_otziv_user_icon{
+    width: 50%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     align-items: center;
+}
+
+.user_icon__img{
+    width: 50%;
+    padding: 10px;
+}
+.user_icon__img > img{
+    width: 60px;
+    height: 40px;
+}
+
+.user_icon__text{
+    padding: 10px;
+}
+
+.user_icon__text > p{
+    font-size: 2em;
+}
+
+.block_otziv__header{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .block_otziv_stars{
     background-color: #959198;
-    margin-right: 90px;
     border-radius: 24px;
-    margin-top: 20px;
     padding: 10px;
-}
-
-.block_otziv_text{
-    font-size: 70px;
-    margin-left: 10%;
+    text-align: center;
+    max-width: 30%;
+    height: auto;
+    padding: 10px;
 }
 
 .block_otziv__main{
@@ -626,7 +643,7 @@ header{
 .six_block__button{
     margin: auto;
     margin-top: 40px;
-    width: 60%;
+    width: 72%;
     text-align: center;
 }
 
