@@ -8,8 +8,10 @@
     src: url("../fonts/Garet/Garet-Heavy.ttf");
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body{
-    width: 100%;
     margin: 0;
     padding: 0;
     background-color: #F7B06F;
@@ -21,18 +23,13 @@ ul{
 
 /*Основной блок*/
 .main_block{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    width: auto;
+    height: 100%;
 }
 /*Основной блок*/
 
 /*Голова сайта*/
 header{
-    width: 100%;
-    height: auto;
     background: url("../images/clovertec_bannerimag.png") no-repeat;
     display: flex;
     justify-content: center;
@@ -41,6 +38,7 @@ header{
     background-size:  100% 100%;
     padding-bottom: 4%;
     filter: drop-shadow(0 0 40px black);
+    width: 100%;
 }
 .text_style{
     font-family: "Maler";
@@ -85,20 +83,26 @@ header{
 /*header=header*/
 .main-header{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
     height: auto;
-    width: 90%;
-    margin-top: 1%;
+    width: 100%;
+    background-color: #ff9900;
+    height: 120px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 15px 3px rgb(0, 0, 0);
 }
 
 .main-header__block{
     width: 17%;
-    height: 60px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-header__block > button > a{
@@ -116,8 +120,7 @@ header{
 }
 
 .main-header__block_img > img{
-    width: 60%;
-    margin: auto;
+    width: 100px;
 }
 
 .main-header__block_img{
@@ -125,15 +128,16 @@ header{
     margin: auto;
 }
 
-.main-header__block > button{
+.button_header{
     width: 70%;
     height:90px;
     border-radius: 20px;
-    background-color: #FF4F00;
+    background-color: #f05a15;
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
     color: white;
     font-size: 32px;
-    border: #f4c311;
     margin-right: -190px;
+    border: #f05a15;
 }
 
 .main-header__block > h2{
@@ -253,7 +257,7 @@ header{
 
 .main_block_thirst{
     background: url("../images/1614507669_190-p-kirpich-belii-fon-249.jpg") no-repeat;
-    width: 80%;
+    width: 100%;
     background-size: 100% 100%;
     display: flex;
     flex-direction: row;
@@ -261,8 +265,6 @@ header{
     flex-wrap: wrap;
     margin-bottom: 3%;
     margin-top: 3%;
-    border-radius: 100px;
-    padding-bottom: 60px;
 }
 
 .block__element{
@@ -321,7 +323,6 @@ header{
     width: 40%;
     height: 140px;
     background: none;
-    border: 1px solid white;
     border-radius: 20px;
     font-size: 32px;
     font-weight: bold;
@@ -372,7 +373,6 @@ header{
     flex-wrap: wrap;
     min-height: 650px;
     max-height: auto;
-    padding: 90px 10px 90px 10px;
 }
 
 .recomend_block__image{
@@ -510,7 +510,7 @@ header{
     border-radius: 200px;
     height: 100px;
     margin: auto;
-    background-color: #FCC503;
+    background-color: #FF4F00;
     font-size: 40px;
     font-weight: bold;
     font-family: "Maler";
@@ -530,7 +530,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 10px 10px 80px 10px;
+    padding-bottom: 70px;
 }
 
 .block_five__header{

@@ -26,6 +26,26 @@
     }
 }
 
+/*Анимация для текста*/
+@keyframes text-move{
+    0%{
+        padding: 0;
+    }
+    50%{
+        padding: 5px;
+    }
+    100%{
+        padding: 10px;
+    }
+}
+
+@keyframes pulse{
+    0% {box-shadow: 0 8px 25px 0 rgb(7, 242, 199); background-color: #f05a15;}
+    50%{
+        background-color: #cc4e13;
+    }
+    100%{background-color: #bf4913;}
+  }
 
 .button_center{
     animation: button_head 4s infinite;
@@ -63,4 +83,23 @@
 
 .left-text-image > img{
     animation: phone_anim 3s infinite;
+}
+
+
+.left-text_dop__p-animation{
+    animation: text-move 3s 4;
+}
+
+.left-text_dop__p-animation > a:hover{
+    color: #FF4F00;
+}
+
+
+.button_header:hover{
+    animation: pulse 2s infinite;
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
