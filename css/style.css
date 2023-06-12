@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Maler";
-    src: url("../fonts/Maler_Header_font/Maler.ttf");
+    src: url("../fonts/intro/Intro.otf");
 }
 
 @font-face{
     font-family: "Abebas";
-    src: url("../fonts/Garet/Garet-Heavy.ttf");
+    src: url("../fonts/clearsans/ClearSans-Medium.ttf");
 }
 
 html{
@@ -44,23 +44,27 @@ header{
     font-family: "Maler";
     text-decoration: none;
     color: white;
+    text-shadow: 2px black;
 }
 
 .text_footer{
     font-family: "Maler";
     color:#EF7300;
     text-decoration: none;
+    text-shadow: 1px 2px black;
 }
 
 .text_style_main{
     font-family: "Abebas";
     color: white;
     text-decoration: none;
+    text-shadow: 2px 2px black;
 }
 
 .text_style_main_two{
     font-family: "Abebas";
-    color: #FDAD1C;
+    color: #FF4F00;
+    text-shadow: 2px black;
     text-decoration: none;
 }
 
@@ -69,13 +73,15 @@ header{
     color: black;
     font-weight: bold;
     text-decoration: none;
+    text-shadow: 2px black;
     font-size: 32px;
 }
 
 .text_style_main_four{
     font-family: "Abebas";
     color:rgb(74, 70, 70);
-    font-size: 28px;
+    font-size: 34px;
+    text-shadow: 2px black;
     text-decoration: none;
 }
 
@@ -265,6 +271,7 @@ header{
     flex-wrap: wrap;
     margin-bottom: 3%;
     margin-top: 3%;
+    padding-bottom: 50px;
 }
 
 .block__element{
@@ -750,8 +757,8 @@ header{
     border: #FCC503;
     background-color: #FCC503;
     color: black;
-    border-radius: 24px;
     font-size: 30px;
+    border-radius: 4px;
 }
 
 .footer_second{
