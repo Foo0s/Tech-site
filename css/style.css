@@ -23,7 +23,7 @@ ul{
 
 /*Основной блок*/
 .main_block{
-    width: auto;
+    width: 100%;
     height: 100%;
 }
 /*Основной блок*/
@@ -38,7 +38,7 @@ header{
     background-size:  100% 100%;
     padding-bottom: 4%;
     filter: drop-shadow(0 0 40px black);
-    width: 100%;
+    flex-direction: row;
 }
 .text_style{
     font-family: "Maler";
@@ -66,6 +66,7 @@ header{
     color: #FF4F00;
     text-shadow: 2px black;
     text-decoration: none;
+    font-size: 1.4vw;
 }
 
 .text_style_main_three{
@@ -74,7 +75,7 @@ header{
     font-weight: bold;
     text-decoration: none;
     text-shadow: 2px black;
-    font-size: 32px;
+    font-size: 1.8vw;
 }
 
 .text_style_main_four{
@@ -95,7 +96,7 @@ header{
     height: auto;
     width: 100%;
     background-color: #ff9900;
-    height: 120px;
+    height: 100px;
     align-items: center;
     text-align: center;
     box-shadow: 0 4px 15px 3px rgb(0, 0, 0);
@@ -112,7 +113,8 @@ header{
 }
 
 .main-header__block > button > a{
-    font-size: 26px;
+    font-size: 1.3vw;
+
 }
 
 .main-header__block{
@@ -142,8 +144,9 @@ header{
     box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
     color: white;
     font-size: 32px;
-    margin-right: -190px;
     border: #f05a15;
+    margin: auto;
+    text-align: center;
 }
 
 .main-header__block > h2{
@@ -198,32 +201,27 @@ header{
 .main-text-left{
     display: flex;
     justify-content: center;
-    margin-left: -15%;
-    margin-top: 7%;
+    margin-left: 55%;
+    margin-top: -20%;
 }
 
 .main-text-left__left{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 100%;
     text-align: center;
 }
 
 .left-text{
-    font-size: 34px;
     width: 100%;
     color:#FCC503;
     -webkit-text-stroke: 0.2px black;
     font-weight: bold;
 }
 
-.left-text-number{
-    margin-top: -10%;
-}
-
 .left-text-number > a{
     color: black;
-    font-size: 40px;
+    font-size: 2.5vw;
     font-weight: bold;
     text-decoration: none;
 }
@@ -263,7 +261,6 @@ header{
 
 .main_block_thirst{
     background: url("../images/1614507669_190-p-kirpich-belii-fon-249.jpg") no-repeat;
-    width: 100%;
     background-size: 100% 100%;
     display: flex;
     flex-direction: row;
@@ -308,7 +305,7 @@ header{
 }
 
 .object_answer__text > p{
-    font-size: 42px;
+    font-size: 1.9vw;
     color: black;
     font-weight: bold;
     text-align: center;
@@ -331,7 +328,7 @@ header{
     height: 140px;
     background: none;
     border-radius: 20px;
-    font-size: 32px;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 
@@ -395,7 +392,7 @@ header{
 }
 
 .recomend_block__image_two{
-    width: 20%;
+    width: 50%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -597,7 +594,7 @@ header{
 .five_element > ul > li > a{
     text-decoration: none;
     font-family: "Abebas";
-    font-size: 36px;
+    font-size: 1.9vw;
     color: black;
 }
 
@@ -793,18 +790,20 @@ header{
 }
 
 .footer_second__center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    font-size: 40px;
+    font-size: 90%;
+    flex-wrap: wrap;
 }
 
 .footer_second__right{
-    width: 25%;
-    height: 100%;
+    width: 60%;
+    height: auto;
+    border: 2px solid black;
 }
 
 .footer_second__right__icons{
@@ -813,17 +812,23 @@ header{
 }
 
 .footer_second__right__icons > img{
-    width: 15%;
+    width: 22%;
 }
 
-.footer_second_text{
-    font-size: 40px;
-}
 
 .footer_second_right__text{
     margin-top: 2%;
-    font-size: 46px;
+    font-size: 90%;
     color: #FCC503;
     font-weight: bold;
     -webkit-text-stroke: 0.4px black;
+    border: 2px solid black;
+}
+
+.footer_second_center_information{
+    width: 100%;
+}
+
+.second_inform__header{
+    width: 100%;
 }
