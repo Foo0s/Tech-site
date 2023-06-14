@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: "Maler";
-    src: url("../fonts/Maler_Header_font/Maler.ttf");
+    src: url("../fonts/intro/Intro.otf");
 }
 
 @font-face{
     font-family: "Abebas";
-    src: url("../fonts/Garet/Garet-Heavy.ttf");
+    src: url("../fonts/clearsans/ClearSans-Bold.ttf");
 }
 
 body{
@@ -27,6 +27,8 @@ body{
     height: 100%;
     text-align: center;
     margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 
@@ -53,7 +55,7 @@ body{
 
 .header_h2 > h2{
     color: white;
-    font-size: 250%;
+    font-size: 1.4vw;
 }
 
 /*Внутренний контент*/
@@ -65,7 +67,6 @@ body{
     margin-top: 7%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 7px;
     padding-bottom: 40px;
 }
 
@@ -78,7 +79,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: auto;
-    font-size: 90%;
+    font-size: 1.2vw;
     margin-top: 4%;
     font-family: "Abebas";
 }
@@ -92,7 +93,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: auto;
-    font-size: 90%;
+    font-size: 0.8vw;
     font-family: "Abebas";
     margin-top: 4%;
 }
@@ -111,12 +112,12 @@ body{
     height: 35px;
     color: white;
     font-weight: bold;
-    font-size: 110%;
+    font-size: 1.6vw;
     font-family: "Abebas";
 }
 
 .content_comm{
-    width: 40%;
+    width: 50%;
     margin: auto;
     background-color: #FCC503;
     height: 40px;
@@ -126,6 +127,7 @@ body{
     border-radius: 40px;
     margin-top: 4%;
     font-family: "Abebas";
+    font-size: 0.95vw;
 }
 
 .content_textarea{
@@ -143,7 +145,7 @@ body{
     resize: vertical;
     color: white;
     font-weight: bold;
-    font-size: 110%;
+    font-size: 1.4vw;
     font-family: 'Abebas';
 }
 
@@ -170,6 +172,7 @@ body{
     border-radius: 40px;
     margin-top: 4%;
     font-family: "Abebas";
+    font-size: 1.4vw;
 }
 
 .con-footer__h > img{
@@ -189,7 +192,7 @@ body{
     width: 70%;
     height: 60px;
     margin: auto;
-    font-size: 30px;
+    font-size: 1.4vw;
     font-family: 'Maler';
 }
 
@@ -233,7 +236,7 @@ body{
 }
 
 .block_star > p{
-    font-size: 16px;
+    font-size: 1.2vw;
     margin-top: 5px;
     transform: rotate(270deg);
     color: white;
@@ -265,7 +268,7 @@ body{
 .otziv_block_back > button > a{
     text-decoration: none;
     color: black;
-    font-size: 27px;
+    font-size: 1.4vw;
     font-family: "Maler";
 }
 

@@ -432,26 +432,24 @@ header{
 }
 
 .three_block__header{
-    text-align: center;    
+    text-align: center;
 }
 
 .three_block__content{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .block_otziv{
-    margin-right: 90px;
     background-color: #FFFFFF;
     border-radius: 20px;
     width: 40%;
-    height: 420px;
+    height: 500px;
 }
 
 .block_otziv_user_icon{
-    width: 50%;
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -461,11 +459,10 @@ header{
 
 .user_icon__img{
     width: 50%;
-    padding: 10px;
 }
 .user_icon__img > img{
     width: 60px;
-    height: 40px;
+    height: 50px;
 }
 
 .user_icon__text{
@@ -478,11 +475,11 @@ header{
 
 .block_otziv__header{
     width: 80%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: auto;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-items: center;
     flex-wrap: wrap;
 }
 
@@ -491,9 +488,9 @@ header{
     border-radius: 24px;
     padding: 10px;
     text-align: center;
-    max-width: 30%;
+    width: 100%;
     height: auto;
-    padding: 10px;
+    margin-left: 50%;
 }
 
 .block_otziv__main{
@@ -515,7 +512,6 @@ header{
     height: 100px;
     margin: auto;
     background-color: #FF4F00;
-    font-size: 40px;
     font-weight: bold;
     font-family: "Maler";
     border: none;
