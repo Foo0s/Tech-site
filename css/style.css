@@ -346,76 +346,56 @@ header{
     color: #FCC503;
     text-align: center;
     margin-top: 10px;
-    width: 100%;
+    width: 80%;
     -webkit-text-stroke: 0.2px black;
     font-weight: bold;
+    margin: auto;
+}
+
+.recomend_main__text-left{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.recomend_main__text-right{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.text-left{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-left_img{
+    width: 20%;
+    height: 30%;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.text-left_text{
+    font-family: 'Maler';
+    font-size: 1vw;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+
+.text-left_img > img{
+    width: 55%;
+    height: 80%;
 }
 
 .recomend__main{
     width: 80%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.recomend_block{
-    width: 20%;
-    background-color: white;
-    border-radius: 100px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    height: 650px;
-    align-self: center;
-    align-content: center;
-    flex-wrap: wrap;
-    min-height: 650px;
-    max-height: auto;
-}
-
-.recomend_block__image{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-    width: 100%;
-    margin: auto;
-    height: 20%;
-}
-
-.recomend_block__image_two{
-    width: 50%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
-
-
-.recomend_block__head{
-    text-align: center;
-    font-size: 40px;
-    width: 100%;
-}
-
-.recomend_block__text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:#FCC503;
-    font-size: 27px;
-    -webkit-text-stroke: 0.1px black;
-    width: 100%;
-    height: 30%;
-    margin-bottom: 4%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .main_block_three{
@@ -717,8 +697,12 @@ header{
 .footer_first__right{
     height: 100%;
     display: grid;
-    justify-content: center;
+    grid-template-columns: 1fr;
     width: 20%;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer_first_center_information{
@@ -728,12 +712,42 @@ header{
     height: 100%;
 }
 
+.first_center_block{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_center_block__header{
+    font-size: 1.5vw;
+    color:#FF4F00;
+    filter: drop-shadow(0 0 2px black);
+    font-family: 'Maler';
+}
+
+.first_center_block__img{
+    display: grid;
+    padding-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    margin: auto;
+    justify-items: center;
+    align-content: center;
+}
+
+.first_center_block__img > img{
+    width: 40%;
+    height: 75%;
+}
+
 .footer_first_logo{
     margin-left: 20px;
     font-size: 2.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 
@@ -743,15 +757,16 @@ header{
 }
 
 .first_inform__header{
-    font-size: 2.8vw;
-    color:#d24504;
-    -webkit-text-stroke: 0.2px black;
+    font-size: 1.8vw;
+    color:#EF7300;
+    font-family: 'Maler';
+    -webkit-text-stroke: 0.35px black;
 }
 
 .first_inform__text{
     margin-top: -4%;
-    font-size: 1.8vw;
-    color:#f05a15;
+    font-size: 1.1vw;
+    color:#ffffff;
     -webkit-text-stroke: 0.2px black;
     font-family: 'Maler';
 }
@@ -764,18 +779,22 @@ header{
 }
 
 .footer_first_button{
-    width: 100%;
-    margin: auto;
+    width: 80%;
 }
 
 .footer_first_button > button{
-    width: 150%;
+    width: 100%;
     height: 90px;
     border: #FCC503;
-    background-color: #FCC503;
+    background-color: #EF7300;
     color: black;
     font-size: 1.5vw;
     border-radius: 4px;
+}
+
+.footer_frist_text__p{
+    font-size: 0.6vw;
+    font-family: 'Maler';
 }
 
 
