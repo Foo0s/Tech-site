@@ -9,8 +9,12 @@
 }
 
 body{
-    background: url("../images/gnm-cervis-9773016939-1.jpg") no-repeat;
+    background: url("../images/gnm-cervis-9773016939-1.jpg") no-repeat center center fixed;
     background-size: 100% 100%;
+    -webkit-background-size: fill; /* For WebKit*/
+    -moz-background-size: fill;    /* Mozilla*/
+    -o-background-size: fill;      /* Opera*/
+    background-size: fill;
 }
 
 hr{

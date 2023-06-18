@@ -1,11 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    background: url('../images/fon.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover; /* For WebKit*/
-    -moz-background-size: cover;    /* Mozilla*/
-    -o-background-size: cover;      /* Opera*/
-    background-size: cover;
+    background: url('../images/fon.jpg') repeat center center fixed;
+    -webkit-background-size: fill; /* For WebKit*/
+    -moz-background-size: fill;    /* Mozilla*/
+    -o-background-size: fill;      /* Opera*/
+    background-size: fill;
 }
 
 /*Шрифты*/
@@ -22,8 +22,9 @@ body{
 
 .order_block{
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /*Header*/
@@ -77,7 +78,7 @@ body{
 
 /*Центр. Мейн блок.*/
 .order_block__main{
-    margin-top: 15%;
+    margin-top: 80px;
     width: 100%;
     height: auto;
     background-color: #605F5E;
