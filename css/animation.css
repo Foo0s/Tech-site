@@ -96,7 +96,7 @@
 }
 
 
-.button_center:hover{
+.button_center:hover, .main_footer__button-one > form > input:hover, .main_footer__button-two > button:hover{
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -114,7 +114,7 @@
 }
 
 
-.button_header:hover{
+.button_header:hover, .order-header_elements__but > button:hover{
     animation: pulse 2s infinite;
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;

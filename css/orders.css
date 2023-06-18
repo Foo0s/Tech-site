@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('../images/fon.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;
+}
+
+/*Шрифты*/
+@font-face {
+    font-family: "Maler";
+    src: url("../fonts/intro/Intro.otf");
+}
+
+@font-face{
+    font-family: "Abebas";
+    src: url("../fonts/clearsans/ClearSans-Medium.ttf");
+}
+/**/
+
+.order_block{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Header*/
+.order_block__header{
+    width: 100%;
+    background-color: #ff9900;
+    border-radius: 0px 0px 80px 80px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.order-header_elements{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.order-header_elements__img{
+    margin-left: 20%;
+}
+
+.order-header_elements__img > img{
+    width: 30%;
+    height: 100%;
+}
+
+.order-header_elements__but{
+    width: 50%;
+    height: 70%;
+}
+
+.order-header_elements__but > button{
+    background-color: #FF4F00;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 15px 3px rgb(0, 0, 0);
+}
+
+.order-header_elements__but > button > a{
+    font-family: 'Maler';
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+}
+
+/*Центр. Мейн блок.*/
+.order_block__main{
+    margin-top: 15%;
+    width: 100%;
+    height: auto;
+    background-color: #605F5E;
+    opacity: 0.98;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.order_main{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    grid-gap: 60px;
+}
+
+/*Меин блок - header.*/
+.order_main__header{
+    width: 25%;
+    background-color: #FF4F00;
+    border-radius: 20px;
+    margin-top: 1%;
+    color: white;
+    font-family: 'Maler';
+}
+
+/*Center*/
+.order_main__elements{
+    width: 35%;
+    margin: auto;
+}
+
+.order_main__elements > form{
+    display: grid;
+    grid-gap: 40px;
+    float: left;
+    width: 100%;
+}
+
+.form_one{
+    width: 100%;
+}
+
+.form_one > input{
+    float: left;
+    width: 100%;
+    height: 50px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #ff9900;
+    border: 2px solid black;
+    font-family: 'Abebas';
+    font-size: 1.4vw;
+}
+
+.form_one > label{
+    float: left;
+}
+
+.form_two{
+    width: 100%;
+}
+
+.form_two > input{
+    float: left;
+    width: 100%;
+    height: 50px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #ff9900;
+    border: 2px solid black;
+    font-family: 'Abebas';
+    font-size: 1.4vw;
+}
+
+.form_two > label{
+    float: left;
+}
+
+
+.order_main__elements > form > div > label{
+    background-color: #242424;
+    width: 70%;
+    height: 50px;
+    border-radius: 0px 20px 20px 0px;
+    font-family: 'Abebas';
+    color: white;
+    font-size: 1.6vw;
+    text-align: center;
+}
+
+
+/*Нижняя часть центра order_main*/
+.order_main__footer{
+    width: 60%;
+}
+
+.main_footer{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 20px;
+    grid-gap: 50px;
+}
+
+.main_footer__button-one{
+    width: 90%;
+    height: 90%;
+}
+
+
+.main_footer__button-one > form > input{
+    width: 100%;
+    height: 100%;
+    background-color: #FF4F00;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Maler';
+    font-size: 1.3vw;
+    color: white;
+    padding: 10px;
+}
+
+.main_footer__button-two{
+    width: 90%;
+    height: 90%;
+}
+
+.main_footer__button-two > button{
+    width: 100%;
+    height: 100%;
+    background-color: #ff9900;
+    border: none;
+    font-family: 'Maler';
+    font-size: 1.3vw;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.button_two::before{
+    content: 'Позвонить по телефону';
+}
+
+.clicked::before{
+    content: '8-918-543-23-00';
+}
+
+.main_footer__button-one > form > input:hover, .main_footer__button-two > button:hover{
+    width: 110%;
+}
