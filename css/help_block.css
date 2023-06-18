@@ -18,10 +18,18 @@ hr{
     height: 8px;
     color: #FEC04D;
     font-family: "Header";
+    background-color: #E29303;
+    border-radius: 20px;
 }
 
 textarea{
     resize: vertical;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #f18100;
+    border: 2px solid black;
+    color: black;
+    font-size: 1.2vw;
+    font-family: 'Maler';
 }
 
 .button_back{
@@ -61,7 +69,7 @@ textarea{
 
 
 .header__h{
-    font-size: 2.5vw;
+    font-size: 2vw;
     color: #E29303;
     text-align: center;
     background-color: #424141;
@@ -83,14 +91,29 @@ textarea{
 .block__asked > input{
     height: 60px;
     width: auto;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #f18100;
+    border: 2px solid black;
+    color: black;
+    font-size: 1.5vw;
+    font-family: 'Maler';
 }
 
 .block__asked > select{
     height: 60px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #f18100;
+    border: 2px solid black;
+    color: black;
+    font-size: 1.5vw;
+    font-family: 'Maler';
 }
 
 .block__asked > label{
     font-size: 1.6vw;
+    font-family: 'Abebas';
+    color: white;
+    text-shadow: 1px 2px 2px black;
 }
 
 .help_block__main{
@@ -100,15 +123,16 @@ textarea{
 
 .help_block__main > h3{
     margin-left: 6%;
-    font-size: 2.7vw;
+    font-size: 1.7vw;
     color: white;
     margin-right: 6%;
     text-align: center;
 }
 
 .block__asked > h2{
-    font-size: 2.4vw;
-    color:#FDAD1C
+    font-size: 2vw;
+    color:#000000;
+    font-family: 'Maler';
 }
 
 footer{
@@ -121,6 +145,7 @@ footer{
 }
 
 .footer__button{
+    margin-top: 5%;
     width: 40%;
     text-align: center;
 }

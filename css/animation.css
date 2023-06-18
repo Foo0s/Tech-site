@@ -171,3 +171,16 @@
 .five-element-button:hover{
     animation: button_buy 1s infinite;
 }
+
+
+@keyframes img_move{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.first_center_block__img > img:hover{
+    animation: img_move 2.2s infinite;
+}

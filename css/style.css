@@ -14,8 +14,12 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background-color: #F7B06F;
-}
+    background: url('../images/fon.jpg') repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;
+z}
 
 ul{
     list-style-type: none;
@@ -39,6 +43,8 @@ header{
     padding-bottom: 4%;
     filter: drop-shadow(0 0 40px black);
     flex-direction: row;
+    border-bottom: 9px solid #FF4F00;
+    border-radius: 0px 0px 20px 20px;
 }
 .text_style{
     font-family: "Maler";
@@ -86,6 +92,30 @@ header{
     text-decoration: none;
 }
 
+.txt_for_all{
+    font-family: "Abebas";
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 2px black;
+    font-size: 1.2vw;
+}
+
+.main_block__next{
+    z-index: 4;
+}
+
+.main_block__next > button{
+    border-radius: 12px;
+    width: 65%;
+    height: auto;
+    background-color: #FF4F00;
+    border: none;
+}
+
+.main_block__next > button:hover{
+    background-color: #EF7300;
+}
 
 /*header=header*/
 .main-header{
@@ -228,7 +258,6 @@ header{
 
 .left-text-number:hover > a{
     color: rgb(74, 70, 70);
-    font-size: 40px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -426,7 +455,9 @@ header{
     background-color: #FFFFFF;
     border-radius: 20px;
     width: 40%;
-    height: 500px;
+    height: auto;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 1px  1px black;
 }
 
 .block_otziv_user_icon{
@@ -435,14 +466,15 @@ header{
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .user_icon__img{
-    width: 50%;
+    width: 100%;
 }
 .user_icon__img > img{
-    width: 60px;
-    height: 50px;
+    width: 50px;
+    height: 100%;
 }
 
 .user_icon__text{
@@ -450,7 +482,7 @@ header{
 }
 
 .user_icon__text > p{
-    font-size: 2em;
+    font-size: 2.2vw;
 }
 
 .block_otziv__header{
@@ -459,18 +491,22 @@ header{
     grid-template-columns: repeat(3, 1fr);
     margin: auto;
     align-items: center;
-    justify-items: center;
     flex-wrap: wrap;
+    white-space:normal;
+}
+
+.block_otziv_star{
+    display: block;
 }
 
 .block_otziv_stars{
+    margin-left: 50%;
     background-color: #959198;
     border-radius: 24px;
     padding: 10px;
     text-align: center;
     width: 100%;
     height: auto;
-    margin-left: 50%;
 }
 
 .block_otziv__main{
@@ -607,6 +643,7 @@ header{
     width: 100%;
     padding-bottom: 40px;
     filter: drop-shadow(0 0 40px black);
+    height: auto;
 }
 
 .six_block{
@@ -624,10 +661,33 @@ header{
 }
 
 .six_block__img{
-    width: 45%;
     display: flex;
-    justify-content: space-around;
-    width: 90%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.six_block__img > img{
+    border-radius: 20px;
+    margin-right: 30px;
+}
+
+.six_block__images > button:hover{
+    border: 2px solid #FF4F00;
+    background-color: #FF4F00;
+}
+
+.six_block_next_img{
+    margin: auto;
+    width: 85%;
+    height: 250px;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .img_block__six{
@@ -639,13 +699,10 @@ header{
 }
 
 .six_block__images{
-    width: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    margin-top: 30px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 30%;
 }
 
 .six_block__button{
@@ -739,6 +796,8 @@ header{
 .first_center_block__img > img{
     width: 40%;
     height: 75%;
+    border-radius: 100px;
+    border: 4px solid #FF4F00;
 }
 
 .footer_first_logo{
@@ -834,17 +893,24 @@ header{
 
 .questions_left__input{
     margin-left: 8%;
-    width: 100%;
+    width: inherit;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
 
-.questions_left__input > input{
+.questions_left__input > form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    grid-gap: 10px;
+    margin: auto;
+}
+
+.questions_left__input > form > input{
     border-radius: 14px;
     width: 85%;
     height: 65px;
-    background-color: #f05a15;
     border: 2px solid black;
+    background-color: #f05a15;
     text-align: center;
     color: black;
     font-family: 'Abebas';
