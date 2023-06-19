@@ -689,7 +689,7 @@ header{
     border-radius: 20px;
     margin-right: 30px;
     background: none;
-    width: 215px;
+    width: auto;
 }
 
 .six_block__images > button:hover{
@@ -698,7 +698,7 @@ header{
 }
 
 .six_block_next_img{
-    width: 85%;
+    width: 63%;
     height: 250px;
     display: flex;
     overflow: hidden;
